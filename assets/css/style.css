@@ -1503,32 +1503,29 @@ a.cert-card {
 }
 
 /* ==========================================================================
-   RESPONSIVE TWEAKS
+   RESPONSIVE TWEAKS (MOBILE NATIVE OPTIMIZATIONS)
    ========================================================================== */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .app-container {
     padding: 1rem;
+    padding-bottom: 5.5rem;
+    /* Space for the bottom navbar */
   }
 
   .hero-block {
     padding: 1.5rem;
+    text-align: center;
   }
 
   .hero-stats {
-    padding: 1rem 1.25rem;
+    padding: 1rem;
     gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .stat-num {
-    font-size: 1.8rem;
-  }
-
-  .nav-btn span {
-    display: none;
-  }
-
-  .nav-btn ion-icon {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .contact-layout {
@@ -1537,5 +1534,94 @@ a.cert-card {
 
   .timeline {
     padding: 1.5rem;
+  }
+
+  /* Force 1-column layouts on mobile to prevent card squishing */
+  .featured-projects,
+  .projects-grid,
+  .blog-grid,
+  .cert-grid,
+  .ach-grid,
+  .what-i-do-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* NATIVE BOTTOM APP BAR FOR MOBILE */
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 13, 35, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    /* Safe area padding for iPhones with bottom home indicator */
+    padding: 0.5rem 0.5rem calc(0.5rem + env(safe-area-inset-bottom, 0px)) 0.5rem;
+    z-index: 9999;
+    border-radius: 0;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-scroll-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-list {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .nav-btn {
+    flex-direction: column;
+    padding: 0.4rem;
+    flex: 1;
+    /* Natural even distribution */
+    gap: 0.15rem;
+    border-radius: 12px;
+  }
+
+  .nav-btn span {
+    font-size: 0.6rem;
+    display: block;
+    /* Show very small labels like iOS App Store */
+    font-weight: 500;
+  }
+
+  .nav-btn ion-icon {
+    font-size: 1.35rem;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  /* Neutralize the desktop active line and use a subtle pop instead */
+  .nav-btn.active::after {
+    display: none;
+  }
+
+  .nav-btn.active ion-icon {
+    transform: scale(1.15);
+  }
+
+  .sidebar {
+    padding: 1.5rem;
+  }
+
+  .contact-list {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar-container {
+    width: 110px;
+    height: 110px;
+  }
+
+  .name {
+    font-size: 1.6rem;
   }
 }
