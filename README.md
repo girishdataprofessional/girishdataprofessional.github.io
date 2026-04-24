@@ -1,22 +1,22 @@
-# Girish E — Data Engineering Portfolio
+# Girish E Data Engineering Portfolio
 
-> A premium, highly-optimized responsive personal portfolio crafted for the Modern Data Stack and Agentic AI landscape.
+> A premium, highly optimized responsive personal portfolio crafted for the Modern Data Stack and Agentic AI landscape.
 
 ![Portfolio Preview](./assets/images/og-image.png)
 
 ## 🌟 Overview
 
-This repository contains the source code for my elite data engineering and analytics portfolio. Designed from the ground up to reflect precision and modern aesthetics, the entire architecture leverages a custom **Glassmorphism Dark Mode** CSS engine and deep JavaScript interactivity—featuring intersection-observer-driven animations, real-time GitHub repository fetching, and curated Data Stack blogging.
+This repository contains the source code for my elite data engineering and analytics portfolio. Designed from the ground up to reflect precision and modern aesthetics, the entire architecture leverages a custom **Glassmorphism Dark Mode** CSS engine and deep JavaScript interactivity featuring intersection observer driven animations, realtime GitHub repository fetching, and curated Data Stack blogging.
 
 ## 🚀 Key Features
 
 - **6-Section Single Page Architecture**: Completely responsive layouts mapped seamlessly to About, Resume, Projects, Blog, Achievements, and Contact arrays.
-- **Micro-Animated Glassmorphism System**: Hand-coded semantic HTML and pure CSS utilizing backdrop-filters, custom properties, and glowing border gradients to deliver an ultra-premium visual experience.
+- **Micro-Animated Glassmorphism System**: Hand coded semantic HTML and pure CSS utilizing backdrop filters, custom properties, and glowing border gradients to deliver an ultra premium visual experience.
 - **Live Tech Ecosystem Arrays**:
-  - Live GitHub API dynamic data fetching mapped to color-coded languages.
+  - Live GitHub API dynamic data fetching mapped to color coded languages.
   - Interactive timeline syncing 10M+ daily record ETL achievements across Databricks and Airflow.
   - Curated, live LinkedIn carousels bridging System Design and Advanced Agentic Automation into custom components.
-- **Deep Technical SEO**: Integrated seamlessly with strictly compliant `sitemap.xml`, `robots.txt`, and Open Graph & Twitter meta endpoints. Full `schema.org/Person` JSON-LD configuration enables highly-indexed rich snippets alongside Google Analytics tracking.
+- **Deep Technical SEO**: Integrated seamlessly with strictly compliant `sitemap.xml`, `robots.txt`, and Open Graph & Twitter meta endpoints. Full `schema.org/Person` JSON-LD configuration enables highly indexed rich snippets alongside Google Analytics tracking.
 
 ## 💻 Tech Stack
 
