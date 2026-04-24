@@ -1,6 +1,5 @@
 # Girish E Data Engineering Portfolio
 
-> A premium, highly optimized responsive personal portfolio crafted for the Modern Data Stack and Agentic AI landscape.
 
 ![Portfolio Preview](./assets/images/og-image.png)
 
@@ -28,16 +27,16 @@ This repository contains the source code for my elite data engineering and analy
 ## 🔧 Structure
 
 ```
-├── index.html          # Core document structure & SEO configuration
-├── sitemap.xml         # XML SEO map for major search engine crawlers
-├── robots.txt          # Crawler instructions
+├── index.html          
+├── sitemap.xml         
+├── robots.txt         
 ├── assets/
 │   ├── css/
-│   │   └── style.css   # Main design system & glassmorphism architecture
+│   │   └── style.css   
 │   ├── js/
-│   │   ├── script.js   # Interactivity, GSAP logic, and Github API logic
-│   │   └── blog-data.js# High-performance static array powering the Blog 
-│   ├── images/         # Compressed avatars, og-images, and generated favicons
+│   │   ├── script.js   
+│   │   └── blog-data.js
+│   ├── images/         
 │   └── Girish_E_Resume.pdf
 └── README.md
 ```
