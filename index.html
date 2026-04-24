@@ -5,678 +5,812 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Girish E - Personal Portfolio</title>
 
-  <!--
-    - favicon
-  -->
+  <!-- ═══════════════════════════════════════════════════════════
+       PRIMARY SEO
+  ════════════════════════════════════════════════════════════ -->
+  <title>Girish E | Data Engineer & Analytics Expert</title>
+  <meta name="description"
+    content="Portfolio of Girish E, Associate Data Engineer at Anvizent Analytics. Expert in Apache Airflow, Snowflake, Talend, Python, Tableau & Power BI. Based in Bengaluru, India.">
+  <meta name="keywords"
+    content="Girish E, Data Engineer, ETL, Apache Airflow, Snowflake, Talend, Python, Tableau, Power BI, Data Warehousing, Bengaluru, India, Portfolio">
+  <meta name="author" content="Girish E">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://girishdataprofessional.github.io/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+
+  <!-- Google Analytics Tracking -->
+  <!-- Update G-XXXXXXXXXX to your actual property ID later -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       OPEN GRAPH (LinkedIn, Facebook, WhatsApp previews)
+  ════════════════════════════════════════════════════════════ -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://girishdataprofessional.github.io/">
+  <meta property="og:title" content="Girish E | Data Engineer & Analytics Expert">
+  <meta property="og:description"
+    content="Associate Data Engineer specializing in ETL, Data Warehousing, and Machine Learning. Building robust data pipelines with Airflow, Snowflake & Talend.">
+  <meta property="og:image" content="https://girishdataprofessional.github.io/assets/images/og-image.png">
+  <meta property="og:site_name" content="Girish E — Portfolio">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       TWITTER CARD
+  ════════════════════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://girishdataprofessional.github.io/">
+  <meta name="twitter:title" content="Girish E | Data Engineer & Analytics Expert">
+  <meta name="twitter:description"
+    content="Associate Data Engineer specializing in ETL, Data Warehousing, and Machine Learning.">
+  <meta name="twitter:image" content="https://girishdataprofessional.github.io/assets/images/og-image.png">
+
+  <!-- ═══════════════════════════════════════════════════════════
+       JSON-LD STRUCTURED DATA (schema.org/Person)
+  ════════════════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Girish E",
+    "url": "https://girishdataprofessional.github.io/",
+    "image": "https://girishdataprofessional.github.io/assets/images/geeky (4).png",
+    "sameAs": [
+      "https://github.com/girishdataprofessional",
+      "https://www.linkedin.com/in/girish02/"
+    ],
+    "jobTitle": "Associate Data Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Anvizent Analytics"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bengaluru",
+      "addressCountry": "IN"
+    },
+    "email": "girishdataprofessional@outlook.com",
+    "knowsAbout": ["Apache Airflow", "Snowflake", "Talend", "Python", "ETL", "Data Warehousing", "Tableau", "Power BI", "Machine Learning"]
+  }
+  </script>
+
+  <!-- Favicon -->
   <link rel="icon" href="./assets/images/favicon.png" type="image/png">
-  <!--
-    - custom css link
-  -->
+  <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&family=Outfit:wght@700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Analytics -->
+  <script src="https://app.rybbit.io/api/script.js" data-site-id="1404" defer></script>
 </head>
 
 <body>
+  <!-- Animated particle canvas background -->
+  <canvas id="data-network-bg"></canvas>
 
-  <!--
-    - #MAIN
-  -->
+  <div class="app-container">
 
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/geeky (4).png" alt="Richard hanrick" width="80">
+    <!-- ═══════════════════════════════════════════════════════════
+         SIDEBAR
+    ════════════════════════════════════════════════════════════ -->
+    <aside class="sidebar glass-panel" data-sidebar>
+      <div class="sidebar-header">
+        <figure class="avatar-container">
+          <img src="./assets/images/geeky (4).png" alt="Girish E - Data Engineer" width="120" class="avatar-img"
+            loading="eager">
+          <div class="status-indicator" title="Open to opportunities"></div>
         </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Girish E">Girish E</h1>
-
-          <p class="title">Associate Data Engineer at Anvizent</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+        <h1 class="name gradient-text" title="Girish E">Girish E</h1>
+        <p class="role-badge"><ion-icon name="server-outline"></ion-icon> Associate Data Engineer</p>
       </div>
-    </br>
-        <ul class="social-list">
 
-          <div class="info-content">
-            <p class="title">Social Profiles</p>
-          </div>
-  
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-  
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
-  
-        </div>
-
-          <li class="social-item">
-            <a href="https://github.com/girishdataprofessional" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
+      <div class="sidebar-details">
+        <div class="separator"></div>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail"></ion-icon></div>
+            <div class="contact-info">
+              <span class="label">Email</span>
+              <a href="mailto:girishdataprofessional@outlook.com" class="value"
+                title="Send Email">girish..@outlook.com</a>
+            </div>
           </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/girish02/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="call"></ion-icon></div>
+            <div class="contact-info">
+              <span class="label">Phone</span>
+              <a href="tel:9901917833" class="value">+91 9901917833</a>
+            </div>
           </li>
-
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location"></ion-icon></div>
+            <div class="contact-info">
+              <span class="label">Location</span>
+              <span class="value">Bengaluru, India</span>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="briefcase"></ion-icon></div>
+            <div class="contact-info">
+              <span class="label">Status</span>
+              <span class="value available">Open to Work</span>
+            </div>
+          </li>
         </ul>
-
-      </div>
-
-      <div class="separator"></div>
-
-      <div class="sidebar-info_more">
 
         <div class="separator"></div>
 
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
+        <ul class="social-list">
+          <li>
+            <a href="https://github.com/girishdataprofessional" target="_blank" rel="noopener noreferrer"
+              class="social-link tooltip" data-tooltip="GitHub" aria-label="GitHub Profile">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/girish02/" target="_blank" rel="noopener noreferrer"
+              class="social-link tooltip" data-tooltip="LinkedIn" aria-label="LinkedIn Profile">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:girishdataprofessional@outlook.com" class="social-link tooltip" data-tooltip="Email"
+              aria-label="Send Email">
               <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:girishdataprofessional@outlook.com" class="contact-link">girishdataprofessional@outlook.com</a>
-            </div>
-
+            </a>
           </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:9901917833" class="contact-link">+91 9901917833</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Bengaluru,Karnataka
-                India</address>
-            </div>
-
-          </li>
-
         </ul>
 
+        <div class="separator"></div>
+
+        <a href="./assets/Girish_E_Resume.pdf" download class="download-btn" id="download-resume-btn">
+          <ion-icon name="cloud-download-outline"></ion-icon>
+          Download Resume
+        </a>
+      </div>
     </aside>
 
+    <!-- ═══════════════════════════════════════════════════════════
+         MAIN CONTENT
+    ════════════════════════════════════════════════════════════ -->
+    <main class="main-content">
 
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-        </ul>
-
+      <!-- NAVBAR -->
+      <nav class="navbar glass-panel" aria-label="Portfolio Navigation">
+        <div class="nav-scroll-wrapper">
+          <ul class="nav-list" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-btn active" data-nav-btn="about" role="tab" aria-selected="true"
+                aria-controls="section-about">
+                <ion-icon name="person-outline"></ion-icon><span>About</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-btn" data-nav-btn="resume" role="tab" aria-selected="false"
+                aria-controls="section-resume">
+                <ion-icon name="document-text-outline"></ion-icon><span>Resume</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-btn" data-nav-btn="portfolio" role="tab" aria-selected="false"
+                aria-controls="section-portfolio">
+                <ion-icon name="code-slash-outline"></ion-icon><span>Projects</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-btn" data-nav-btn="blog" role="tab" aria-selected="false" aria-controls="section-blog">
+                <ion-icon name="newspaper-outline"></ion-icon><span>Blog</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-btn" data-nav-btn="achievements" role="tab" aria-selected="false"
+                aria-controls="section-achievements">
+                <ion-icon name="trophy-outline"></ion-icon><span>Achievements</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-btn" data-nav-btn="contact" role="tab" aria-selected="false"
+                aria-controls="section-contact">
+                <ion-icon name="chatbubble-outline"></ion-icon><span>Contact</span>
+              </button>
+            </li>
+          </ul>
+        </div>
       </nav>
 
+      <!-- ═══════════════════════════════════════════════════════
+           SECTION: ABOUT
+      ════════════════════════════════════════════════════════ -->
+      <article class="section active" data-page="about" id="section-about" role="tabpanel">
 
+        <!-- HERO -->
+        <div class="hero-block glass-panel reveal">
+          <div class="hero-text">
+            <p class="hero-greeting">👋 Hello, I'm</p>
+            <h2 class="hero-name gradient-text">Girish E</h2>
+            <p class="hero-role">I <span class="typed-cursor">|</span></p>
+            <p class="hero-tagline">Transforming raw data into strategic decisions — one pipeline at a time.</p>
+            <div class="hero-actions">
+              <a href="https://www.linkedin.com/in/girish02/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary">
+                <ion-icon name="logo-linkedin"></ion-icon> Connect on LinkedIn
+              </a>
+              <button class="btn btn-ghost" data-nav-btn="contact">
+                <ion-icon name="send-outline"></ion-icon> Get in Touch
+              </button>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="17">0</span>
+              <span class="stat-unit">+</span>
+              <p class="stat-label">Months Experience</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="20">0</span>
+              <span class="stat-unit">+</span>
+              <p class="stat-label">Projects Shipped</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="12">0</span>
+              <span class="stat-unit">+</span>
+              <p class="stat-label">Tools Mastered</p>
+            </div>
+          </div>
+        </div>
 
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
+        <!-- ABOUT ME -->
+        <header class="section-header">
+          <h2 class="section-title"><span class="title-highlight">&gt;&gt;</span> About_Me</h2>
         </header>
-
-        <section class="about-text">
-          <p>
-            Girish is a dedicated data enthusiast with a passion for transforming complex data into actionable insights. As an Associate Data Engineer at Anvizent Analytics, he has demonstrated expertise in optimizing data pipelines, developing ETL processes, and creating interactive dashboards. Girish's proficiency spans a wide range of technologies, including Airflow, Talend, Snowflake, Tableau, and Power BI. He excels at improving platform performance, enhancing data visualization, and aligning technical solutions with business objectives. With a strong foundation in data science and machine learning principles, Girish consistently delivers value by driving data-driven decision-making across various projects. His ability to collaborate with cross-functional teams and adapt to new challenges makes him a valuable asset in the ever-evolving field of data analytics.
-              <br>
+        <div class="about-content glass-panel reveal">
+          <p class="terminal-text">
+            I architect highly-scalable data ecosystems and digital products. As an <strong>Associate Data
+              Engineer</strong>, I build robust Modern Data Stack solutions utilizing <strong>Python, Databricks, and
+              Apache Spark</strong>. My high-throughput ETL pipelines process 10M+ daily records and have slashed
+            latency by up to 40% via deep Snowflake optimization.
           </p>
-      </section>
-      
+          <p class="terminal-text mt-4">
+            Beyond traditional Big Data warehousing with <strong>Airflow and dbt</strong>, I am a passionate builder of
+            Agentic AI workflows. I design intelligent architectures—from an Edge Store extension with 20+ features, to
+            an AI finance PWA with active daily users. By fusing enterprise data engineering with local <strong>LLM
+              APIs and JavaScript</strong>, I turn raw data into deeply engaging software.
+          </p>
+        </div>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
+        <!-- WHAT I DO -->
+        <header class="section-header mt-8">
+          <h2 class="section-title"><span class="title-highlight">&gt;&gt;</span> What_I_Do</h2>
         </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
+        <div class="what-i-do-grid reveal">
+          <div class="wid-card glass-panel tech-hover">
+            <div class="wid-icon">⚙️</div>
+            <h3 class="wid-title">Data Pipeline Engineering</h3>
+            <p class="wid-desc">Design and maintain scalable ETL/ELT pipelines using Apache Airflow and Talend that
+              handle millions of records daily.</p>
           </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">National College Jayanagar</h4>
-              <h6 class="h4 timeline-item-title">Bachelors in Data Science</h6>
-
-              <span>2020 — 2023</span>
-
-              <p class="timeline-text">
-                🎓 Graduated from National College in August 2023 with a degree in Data Science. During my time there, I delved into a diverse array of subjects, including Statistics, SQL, Machine Learning, Data Analytics, Natural Language Processing (NLP), and Cloud Computing. 
-                Through hands-on experience with AWS, I honed my skills in Cloud Computing, and I've become proficient in visualization tools like Tableau and Power BI.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">National College Jayanagar</h4>
-              <h6 class="h4 timeline-item-title">Science Stream</h6>
-
-              <span>2018 — 2020</span>
-
-              <p class="timeline-text">
-                Completed pre-university in National College with subjects Physics, Chemistry, Computer Science, and Mathematics.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">BNM State School</h4>
-
-              <span>2008 — 2018</span>
-
-              <p class="timeline-text">
-                Completed schooling from BNM State School,Studied a diverse range of 
-                subjects such as Mathematics, Science, Social Studies and Languages like English, Hindi, and Kannada.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
+          <div class="wid-card glass-panel tech-hover">
+            <div class="wid-icon">❄️</div>
+            <h3 class="wid-title">Data Warehousing</h3>
+            <p class="wid-desc">Architect and optimize data warehouses in Snowflake and other cloud platforms with
+              star/snowflake schema designs.</p>
           </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Full Time</h4>
-              <span>Anvizent Analytics</span>
-              <span>Nov 2023 · Present · Bangalore  </span>
-              <h4 class="h4 timeline-item-title">Associate Data Engineer</h4>
-
-              <p class="timeline-text">
-                One of key accomplishments includes spearheading the development of the Airflow Run Now functionality, streamlining workflow execution and enhancing operational efficiency.
-                <br>
-              </p>
-            
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Internship</h4>
-              <span>Anvizent Analytics</span>
-              <span>May 2023 · Nov 2023 · Bangalore  </span>
-              <h4 class="h4 timeline-item-title">Data Engineer Intern</h4>
-
-              <p class="timeline-text">
-                During tenure as a Data Engineer Intern at Anvizent Analytics, Embarked on a dynamic six-month journey into ETL and Data Warehousing. Immersed  in fundamental concepts and practices, gaining valuable experience in monitoring and troubleshooting data pipeline issues on a daily basis.
-                <br>
-                Throughout internship, mastered the ETL tool Talend, leveraging its functionalities to enhance data processing efficiency. As a member of the Airflow development team, played a pivotal role in designing and implementing robust workflows, further solidifying expertise in data engineering technologies.
-                </p>
-                
-
-            </li>
-            
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Microsoft Office Applications </h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">DataBases and Datawarehousing Concepts {SQL & NoSQL}</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Programming Languages {Python & R}  </h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Data Visualisastion {Tableau & Power Bi} </h5>
-                <data value="60">60%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Machine Learning</h5>
-                <data value="60">60%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Data Orchestration {Airflow,Dolphin}</h5>
-                <data value="55">55%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">ETL {Talend}</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Cloud {AWS & GCP}</h5>
-                <data value="40">40%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 40%;"></div>
-              </div>
-
-            </li>
-
-            
-            
-
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Certificates</h3>
-
-          <ul class="service-list">
-
-            <a href="https://www.udemy.com/certificate/UC-18113631-2b9f-4d01-b2b3-ec8f4a3c861c/">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/avatar-11.jpg" alt="design icon" width="40">
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title"> Complete Machine Learning & Data Science Bootcamp 2023</h4>
-                  <p class="service-item-text">
-                    During the course, I gained proficiency in developing both supervised and unsupervised models, 
-                    as well as basic Natural Language Processing models.
-                  </p>
-                </div>
-              </li>
-            </a>
-
-            <a href="https://www.udemy.com/certificate/UC-ff031ded-98b8-42eb-88fa-63b366995520/">
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/avatar-11.jpg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Cloud Computing and (AWS) Fundamentals</h4>
-
-                <p class="service-item-text">
-                 I gained practical knowledge and hands-on experience with essential AWS services such as S3 buckets, EC2 instances etc.
-                </p>
-              </div>
-
-            </li>
-            </a>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-11.jpg" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div> 
-
-      </article>  
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <div class="wid-card glass-panel tech-hover">
+            <div class="wid-icon">📊</div>
+            <h3 class="wid-title">Analytics & Visualization</h3>
+            <p class="wid-desc">Build interactive executive dashboards in Tableau and Power BI that turn complex
+              datasets into clear business narratives.</p>
+          </div>
+          <div class="wid-card glass-panel tech-hover">
+            <div class="wid-icon">🤖</div>
+            <h3 class="wid-title">ML & Data Science</h3>
+            <p class="wid-desc">Apply supervised and unsupervised learning models, NLP techniques, and statistical
+              analysis to drive predictions.</p>
+          </div>
+        </div>
+
+        <!-- TECH STACK -->
+        <header class="section-header mt-8">
+          <h2 class="section-title"><span class="title-highlight">&gt;&gt;</span> Tech_Stack</h2>
         </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Data Analytics</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Machine Learning</button>
-            </li>
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Data Analytics</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Machine Learning</button>
-              </li>
-
-            </ul>
-
+        <div class="skills-grid reveal">
+          <div class="skill-card glass-panel tech-hover">
+            <div class="skill-header">
+              <ion-icon name="server"></ion-icon>
+              <h4>Modern Data Stack & Warehousing</h4>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+            <span class="skill-val">85%</span>
+            <div class="skill-tags">
+              <span class="stag">Snowflake</span><span class="stag">dbt</span><span class="stag">PostgreSQL</span><span
+                class="stag">BigQuery</span>
+            </div>
           </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="data analytics">
-              <a href="https://github.com/girishdataprofessional/Consumer-Goods-SQL-Analysis-With-Tableau-Dashboard">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-11.png" alt="consumer goods SQL analysis with tableau dashboard" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Consumer Goods SQL Analysis With Tableau Dashboard</h3>
-
-                <p class="project-category">Data Analytics</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="data analytics">
-              <a href="https://github.com/girishdataprofessional/Amazon-Best-Selling-Books-from-2009-2021">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-12.png" alt="amazon best selling books from 2009-2021" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Amazon Best Selling Books from 2009-2021</h3>
-
-                <p class="project-category">Data Analytics</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="data analytics">
-              <a href="https://github.com/girishdataprofessional/Revenue-Insights-Hospitality-Domain">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-13.png" alt="revenue insights hospitality domain" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Revenue Insights Hospitality Domain</h3>
-
-                <p class="project-category">Data Analytics</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://github.com/girishdataprofessional/Email-Classification-System">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-15.png" alt="email classification system" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Email Classification System</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://github.com/girishdataprofessional/Stroke_Analysis_and_Prediction">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-14 (1).png" alt="stroke analysis and prediction" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Stroke Analysis and Prediction</h3>
-
-                <p class="project-category">Machine Learning</p>
-
-              </a>
-            </li>
-
-        </section>
+          <div class="skill-card glass-panel tech-hover">
+            <div class="skill-header">
+              <ion-icon name="code-slash"></ion-icon>
+              <h4>Programming Languages</h4>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+            <span class="skill-val">80%</span>
+            <div class="skill-tags">
+              <span class="stag">Python</span><span class="stag">SQL</span><span class="stag">Scala</span><span
+                class="stag">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-card glass-panel tech-hover">
+            <div class="skill-header">
+              <ion-icon name="hardware-chip"></ion-icon>
+              <h4>ML & Agentic AI Workflows</h4>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+            <span class="skill-val">75%</span>
+            <div class="skill-tags">
+              <span class="stag">LLM APIs</span><span class="stag">LangChain</span><span class="stag">Agentic
+                Patterns</span><span class="stag">Scikit-Learn</span>
+            </div>
+          </div>
+          <div class="skill-card glass-panel tech-hover">
+            <div class="skill-header">
+              <ion-icon name="git-network"></ion-icon>
+              <h4>Data Orchestration</h4>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 70%;"></div>
+            </div>
+            <span class="skill-val">70%</span>
+            <div class="skill-tags">
+              <span class="stag">Apache Airflow</span><span class="stag">Airbyte</span><span
+                class="stag">Fivetran</span>
+            </div>
+          </div>
+          <div class="skill-card glass-panel tech-hover">
+            <div class="skill-header">
+              <ion-icon name="analytics"></ion-icon>
+              <h4>AI Analytics & BI</h4>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+            <span class="skill-val">75%</span>
+            <div class="skill-tags">
+              <span class="stag">Power BI</span><span class="stag">Tableau</span><span class="stag">Generative BI</span>
+            </div>
+          </div>
+          <div class="skill-card glass-panel tech-hover">
+            <div class="skill-header">
+              <ion-icon name="cloud"></ion-icon>
+              <h4>Cloud & MLOps</h4>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 65%;"></div>
+            </div>
+            <span class="skill-val">65%</span>
+            <div class="skill-tags">
+              <span class="stag">AWS (S3/EC2)</span><span class="stag">GCP</span><span class="stag">Docker</span>
+            </div>
+          </div>
+        </div>
 
       </article>
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
+      <!-- ═══════════════════════════════════════════════════════
+           SECTION: RESUME
+      ════════════════════════════════════════════════════════ -->
+      <article class="section" data-page="resume" id="section-resume" role="tabpanel">
+
+        <div class="resume-top-bar">
+          <header class="section-header">
+            <h2 class="section-title"><span class="title-highlight">&gt;&gt;</span> Experience_Log</h2>
+          </header>
+          <a href="./assets/Girish_E_Resume.pdf" download class="btn btn-primary btn-sm">
+            <ion-icon name="cloud-download-outline"></ion-icon> Download PDF
+          </a>
+        </div>
+
+        <div class="timeline glass-panel reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-badge">Full-Time</div>
+            <h3 class="timeline-title">Associate Data Engineer</h3>
+            <span class="timeline-meta">Anvizent Analytics &nbsp;|&nbsp; Nov 2023 – Present</span>
+            <ul class="timeline-bullets">
+              <li>Partnered directly with enterprise clients to map workflows and engineered custom <strong>REST API and
+                  webhook connectors</strong> for Oracle, NetSuite, and Epicor, reducing integration time by 50%.</li>
+              <li>Owned end-to-end <strong>Airflow DAGs on Kubernetes with Docker containers</strong>, optimizing
+                resources and increasing pipeline reliability by 40%.</li>
+              <li>Led <strong>Databricks Spark processing</strong> for 10 million+ daily records, resolving metadata
+                issues and delivering 30% efficiency gains.</li>
+              <li>Built monitoring, alerting, and SLA systems that reduced downtime by 25%, giving clients full
+                visibility into data health.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-badge intern">Internship</div>
+            <h3 class="timeline-title">Data Engineer Intern</h3>
+            <span class="timeline-meta">Anvizent Analytics &nbsp;|&nbsp; May 2023 – Oct 2023</span>
+            <ul class="timeline-bullets">
+              <li>Optimized 500+ <strong>Talend, Python, and SQL pipelines</strong> for real-time ERP flows, improving
+                throughput by 25% and cutting costs by 15%.</li>
+              <li>Developed <strong>Python scripts with retry logic and async processing</strong> for ERP API
+                extraction, enabling seamless batch and real-time refreshes.</li>
+              <li>Containerized workflows with Docker and tested Kubernetes deployments for scalable, fault-tolerant
+                operations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <header class="section-header mt-8">
+          <h2 class="section-title"><span class="title-highlight">&gt;&gt;</span> Education_Log</h2>
+        </header>
+
+        <div class="timeline glass-panel reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <h3 class="timeline-title">Bachelors in Data Science</h3>
+            <span class="timeline-meta">National College Jayanagar &nbsp;|&nbsp; 2020 – 2023</span>
+            <ul class="timeline-bullets">
+              <li>Studies included Statistics, SQL, Machine Learning, Data Analytics, NLP, and Cloud Computing.</li>
+              <li>Proficient with AWS, Tableau, and Power BI. Final year project on customer churn prediction.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <h3 class="timeline-title">Science Stream (PCMC)</h3>
+            <span class="timeline-meta">National College Jayanagar &nbsp;|&nbsp; 2018 – 2020</span>
+            <ul class="timeline-bullets">
+              <li>Physics, Chemistry, Mathematics, and Computer Science with distinction.</li>
+            </ul>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════
+           SECTION: PORTFOLIO / PROJECTS
+      ════════════════════════════════════════════════════════ -->
+      <article class="section" data-page="portfolio" id="section-portfolio" role="tabpanel">
+        <header class="section-header">
+          <h2 class="section-title"><span class="title-highlight">&gt;&gt;</span> Featured_Projects</h2>
+        </header>
+
+        <!-- Manual featured projects -->
+        <div class="featured-projects reveal">
+
+          <!-- CleanTube -->
+          <div class="featured-card glass-panel tech-hover">
+            <div class="fp-badge">🏆 Solo Build · Live on Edge Store</div>
+            <h3 class="fp-title">CleanTube — YouTube Productivity Extension</h3>
+            <p class="fp-desc">A browser extension I built solo from scratch to fix YouTube's distraction problem.
+              Features 20+ tools including a full ad blocker, Zen Mode, AI-powered Gemini video summaries, deep work
+              timer, watch analytics dashboard, SponsorBlock automation, smart bookmarks, voice notes dictation, NSFW
+              friction guard, and Return YouTube Dislike integration — all running 100% locally with zero data
+              collection.</p>
+            <div class="fp-tags">
+              <span class="stag">JavaScript</span>
+              <span class="stag">Chrome Extension MV3</span>
+              <span class="stag">Gemini AI API</span>
+              <span class="stag">Canvas API</span>
+              <span class="stag">declarativeNetRequest</span>
+              <span class="stag">Web Speech API</span>
+            </div>
+            <div class="fp-actions">
+              <a href="https://clean-tube.netlify.app/" target="_blank" rel="noopener noreferrer" class="fp-link">
+                <ion-icon name="globe-outline"></ion-icon> Visit Website
+              </a>
+              <a href="https://microsoftedge.microsoft.com/addons/detail/bgafgkjeenondegkkdolnkeelmmilfil"
+                target="_blank" rel="noopener noreferrer" class="fp-link" style="color: var(--accent-secondary)">
+                <ion-icon name="download-outline"></ion-icon> Get on Edge Store
+              </a>
+            </div>
+          </div>
+
+          <!-- Finance Tracker Pro -->
+          <div class="featured-card glass-panel tech-hover">
+            <div class="fp-badge">🌟 Live Product · 25+ Daily Active Users</div>
+            <h3 class="fp-title">Smart Finance Manager — AI Finance PWA</h3>
+            <p class="fp-desc">A full-featured, AI-powered Progressive Web App (PWA) for personal finance — serving 25+
+              active daily users. Built with voice-recognition expense entry, intelligent budget alerts, real-time
+              spending charts, multi-currency support, and AI-driven financial insights. Installable on any device like
+              a native app, with offline support and a fully responsive glassmorphism UI.</p>
+            <div class="fp-tags">
+              <span class="stag">React / Vite</span>
+              <span class="stag">PWA</span>
+              <span class="stag">Web Speech API</span>
+              <span class="stag">AI Integration</span>
+              <span class="stag">Recharts</span>
+              <span class="stag">Netlify</span>
+            </div>
+            <div class="fp-actions">
+              <a href="https://financetrackerpro.netlify.app/" target="_blank" rel="noopener noreferrer"
+                class="fp-link">
+                <ion-icon name="globe-outline"></ion-icon> Visit Live App
+              </a>
+            </div>
+          </div>
+
+
+          <!-- Snowflake DWH -->
+          <div class="featured-card glass-panel tech-hover">
+            <div class="fp-badge">⭐ Professional Work</div>
+            <h3 class="fp-title">Snowflake DWH Migration Pipeline</h3>
+            <p class="fp-desc">End-to-end data migration pipeline from legacy MySQL to Snowflake with automated schema
+              validation, incremental loads, and historical data reconciliation delivering a 40% cut in query latency.
+            </p>
+            <div class="fp-tags">
+              <span class="stag">Snowflake</span><span class="stag">Python</span><span class="stag">dbt</span><span
+                class="stag">Talend</span>
+            </div>
+            <div class="fp-actions">
+              <a href="https://github.com/girishdataprofessional" target="_blank" rel="noopener noreferrer"
+                class="fp-link">
+                <ion-icon name="logo-github"></ion-icon> View on GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <header class="section-header mt-8">
+          <h2 class="section-title"><span class="title-highlight">&gt;&gt;</span> Git_Repositories</h2>
+        </header>
+
+        <div class="portfolio-controls glass-panel reveal">
+          <p class="terminal-text text-sm" style="margin-bottom: 15px;">$ git fetch
+            api.github.com/users/girishdataprofessional/repos <span class="blink">▌</span></p>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Python">Python</button>
+            <button class="filter-btn" data-filter="Jupyter Notebook">Jupyter</button>
+            <button class="filter-btn" data-filter="HTML">HTML/CSS</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="github-projects-container">
+          <div class="loader">
+            <div class="spinner"></div>
+            <span>Connecting to GitHub API...</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════
+           SECTION: BLOG
+      ════════════════════════════════════════════════════════ -->
+      <article class="section" data-page="blog" id="section-blog" role="tabpanel">
+        <header class="section-header">
+          <h2 class="section-title"><span class="title-highlight">&gt;&gt;</span> Blog &amp; Articles</h2>
+        </header>
+        <p class="section-subheading reveal">Thoughts on data engineering, tooling, and lessons from the trenches —
+          shared on LinkedIn.</p>
+
+        <div class="blog-grid reveal" id="blog-grid">
+          <!-- Rendered by blog renderer in script.js -->
+        </div>
+
+        <div class="blog-cta reveal">
+          <a href="https://www.linkedin.com/in/girish02/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary">
+            <ion-icon name="logo-linkedin"></ion-icon> Follow on LinkedIn for More
+          </a>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════
+           SECTION: ACHIEVEMENTS
+      ════════════════════════════════════════════════════════ -->
+      <article class="section" data-page="achievements" id="section-achievements" role="tabpanel">
+        <header class="section-header">
+          <h2 class="section-title"><span class="title-highlight">&gt;&gt;</span> Key_Achievements</h2>
+        </header>
+
+        <div class="ach-grid reveal">
+          <div class="ach-card glass-panel">
+            <span class="ach-emoji">🧹</span>
+            <div class="ach-content">
+              <h4>CleanTube — Live on Microsoft Edge Store</h4>
+              <p>Solo-built browser extension with 20+ features: full ad blocker, Zen Mode, Gemini AI video summaries,
+                Deep Work Timer, analytics dashboard, SponsorBlock, smart bookmarks, voice notes dictation, and NSFW
+                friction guard — zero data collection, 100% local.</p>
+            </div>
+          </div>
+          <div class="ach-card glass-panel">
+            <span class="ach-emoji">💰</span>
+            <div class="ach-content">
+              <h4>Smart Finance Manager — 25+ Daily Active Users</h4>
+              <p>AI-powered finance PWA with voice expense entry, intelligent budget alerts, real-time charts, and
+                multi-currency support. Serving a growing base of 25+ active daily users — installable as a native app
+                on any device.</p>
+            </div>
+          </div>
+          <div class="ach-card glass-panel">
+            <span class="ach-emoji">🚀</span>
+            <div class="ach-content">
+              <h4>40% Pipeline Latency Reduction</h4>
+              <p>Optimized ETL workloads via query pruning and Snowflake clustering at Anvizent Analytics.</p>
+            </div>
+          </div>
+          <div class="ach-card glass-panel">
+            <span class="ach-emoji">⚡</span>
+            <div class="ach-content">
+              <h4>Airflow Run-Now Feature</h4>
+              <p>Designed and shipped a bespoke Airflow plugin that eliminated manual pipeline trigger delays across 50+
+                production DAGs.</p>
+            </div>
+          </div>
+          <div class="ach-card glass-panel">
+            <span class="ach-emoji">📊</span>
+            <div class="ach-content">
+              <h4>C-Suite Dashboard Delivery</h4>
+              <p>Built executive-facing Tableau dashboards consumed by leadership to drive strategic decisions.</p>
+            </div>
+          </div>
+          <div class="ach-card glass-panel">
+            <span class="ach-emoji">🎓</span>
+            <div class="ach-content">
+              <h4>BSc Data Science — Distinction</h4>
+              <p>Graduated with distinction from National College Jayanagar with a final project on churn prediction.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <header class="section-header mt-8">
+          <h2 class="section-title"><span class="title-highlight">&gt;&gt;</span> Certifications</h2>
+        </header>
+
+        <div class="cert-grid reveal">
+          <a href="https://www.udemy.com/certificate/UC-18113631-2b9f-4d01-b2b3-ec8f4a3c861c/" target="_blank"
+            rel="noopener noreferrer" class="cert-card glass-panel tech-hover">
+            <div class="cert-emoji">🤖</div>
+            <div class="cert-body">
+              <div class="cert-issuer">Udemy</div>
+              <h4 class="cert-title">Complete Machine Learning &amp; Data Science Bootcamp</h4>
+              <p class="cert-desc">Supervised/Unsupervised models &amp; basic NLP</p>
+              <span class="cert-link-label"><ion-icon name="open-outline"></ion-icon> View Certificate</span>
+            </div>
+          </a>
+          <a href="https://www.udemy.com/certificate/UC-ff031ded-98b8-42eb-88fa-63b366995520/" target="_blank"
+            rel="noopener noreferrer" class="cert-card glass-panel tech-hover">
+            <div class="cert-emoji">☁️</div>
+            <div class="cert-body">
+              <div class="cert-issuer">Udemy</div>
+              <h4 class="cert-title">Cloud Computing and AWS Fundamentals</h4>
+              <p class="cert-desc">Hands-on experience with S3, EC2 instances</p>
+              <span class="cert-link-label"><ion-icon name="open-outline"></ion-icon> View Certificate</span>
+            </div>
+          </a>
+          <div class="cert-card glass-panel tech-hover">
+            <div class="cert-emoji">❄️</div>
+            <div class="cert-body">
+              <div class="cert-issuer">Snowflake</div>
+              <h4 class="cert-title">Snowflake Data Warehouse Fundamentals</h4>
+              <p class="cert-desc">Virtual warehouse, time-travel, data sharing</p>
+              <span class="cert-link-label coming">In Progress</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════
+           SECTION: CONTACT
+      ════════════════════════════════════════════════════════ -->
+      <article class="section" data-page="contact" id="section-contact" role="tabpanel">
+        <header class="section-header">
+          <h2 class="section-title"><span class="title-highlight">&gt;&gt;</span> Get_In_Touch</h2>
+        </header>
+        <p class="section-subheading reveal">Whether it's a project, a collaboration, or just a chat about data — my
+          inbox is always open.</p>
+
+        <div class="contact-layout">
+          <!-- Contact Info -->
+          <div class="contact-info-panel glass-panel reveal">
+            <h3 class="contact-panel-title">Quick Links</h3>
+            <div class="contact-quick">
+              <a href="mailto:girishdataprofessional@outlook.com" class="cq-item tech-hover">
+                <div class="cq-icon"><ion-icon name="mail-outline"></ion-icon></div>
+                <div>
+                  <p class="cq-label">Email Me</p>
+                  <p class="cq-value">girishdataprofessional@outlook.com</p>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/girish02/" target="_blank" rel="noopener noreferrer"
+                class="cq-item tech-hover">
+                <div class="cq-icon"><ion-icon name="logo-linkedin"></ion-icon></div>
+                <div>
+                  <p class="cq-label">LinkedIn</p>
+                  <p class="cq-value">linkedin.com/in/girish02</p>
+                </div>
+              </a>
+              <a href="https://github.com/girishdataprofessional" target="_blank" rel="noopener noreferrer"
+                class="cq-item tech-hover">
+                <div class="cq-icon"><ion-icon name="logo-github"></ion-icon></div>
+                <div>
+                  <p class="cq-label">GitHub</p>
+                  <p class="cq-value">github.com/girishdataprofessional</p>
+                </div>
+              </a>
+              <a href="tel:9901917833" class="cq-item tech-hover">
+                <div class="cq-icon"><ion-icon name="call-outline"></ion-icon></div>
+                <div>
+                  <p class="cq-label">Phone</p>
+                  <p class="cq-value">+91 9901917833</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form glass-panel reveal" id="contact-form" action="https://formspree.io/f/xnjllryk"
+            method="POST" novalidate>
+            <h3 class="contact-panel-title">Send a Message</h3>
+            <div class="form-group">
+              <label for="cf-name" class="form-label">Full Name</label>
+              <input type="text" id="cf-name" name="name" class="form-input" placeholder="John Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-email" class="form-label">Email Address</label>
+              <input type="email" id="cf-email" name="email" class="form-input" placeholder="john@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-subject" class="form-label">Subject</label>
+              <input type="text" id="cf-subject" name="subject" class="form-input"
+                placeholder="Project collaboration / Opportunity">
+            </div>
+            <div class="form-group">
+              <label for="cf-message" class="form-label">Message</label>
+              <textarea id="cf-message" name="message" class="form-textarea" rows="5"
+                placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+              <span id="form-btn-text"><ion-icon name="send-outline"></ion-icon> Send Message</span>
+              <span id="form-btn-loading" style="display:none;">Sending...</span>
+            </button>
+            <div id="form-feedback" class="form-feedback" style="display:none;"></div>
+          </form>
+        </div>
+      </article>
+
+    </main>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div id="cursor" aria-hidden="true"></div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script src="./assets/js/blog-data.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
